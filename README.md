@@ -33,6 +33,9 @@ Open `index.html` directly, or use VS Code Live Server.
 Run Lighthouse against each deployed page and record the **actual** scores in the PDF report. Do not invent scores.
 
 ## Deployment
-Suitable for GitHub Pages or Netlify.
+Suitable for Github or Vercel 
+GitHub link {https://github.com/muhammadjunaid73/ClearPay-MultiPage-Website}
+Live link{https://clear-pay-multi-page-website.vercel.app/ }
+
 
 This is a fictional demonstration project; it is not a real payment service.
