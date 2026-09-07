@@ -1,0 +1,16 @@
+/* ClearPay design-token system */
+:root {
+  --primary: #5b4bff;
+  --primary-2: #7a6cff;
+  --bg: #f7f8fc;
+  --surface: #fff;
+  --text: #15172b;
+  --muted: #656a80;
+  --border: #e5e7f0;
+  --success: #12805c;
+  --shadow: 0 18px 50px rgba(30, 34, 70, 0.1);
+  --radius: 20px;
+  --space: clamp(1rem, 2vw, 2rem);
+  --max: 1180px;
+  --ease: 220ms ease;
+}
