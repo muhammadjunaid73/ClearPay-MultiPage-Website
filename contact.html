@@ -1,63 +1,121 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Contact ClearPay.">
-    <title>Contact | ClearPay</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/token.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore the contact page for the ClearPay fintech demo project and learn more about its illustrative payment features and business-focused tools."
+    />
+    <title>Contact | ClearPay Demo</title>
+    <link
+      rel="canonical"
+      href="https://clear-pay-multi-page-website.vercel.app/contact.html"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/token.css" />
     <script defer src="js/main.js"></script>
     <script defer src="js/contact.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="site-header">
-        <nav class="nav container" aria-label="Main navigation"><a class="logo"
-                href="index.html">Clear<span>Pay</span></a><button class="nav-toggle" aria-expanded="false"
-                aria-controls="nav-menu">Menu</button>
-            <div id="nav-menu" class="nav-menu"><a href="index.html">Home</a><a href="features.html">Features</a><a
-                    href="pricing.html">Pricing</a><a href="about.html">About</a><a class="active"
-                    href="contact.html">Contact</a><button id="theme-toggle" class="theme-toggle" type="button"
-                    aria-label="Toggle dark mode">◐</button></div>
-        </nav>
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="logo" href="index.html">Clear<span>Pay</span></a
+        ><button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          Menu
+        </button>
+        <div id="nav-menu" class="nav-menu">
+          <a href="index.html">Home</a>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a class="active" href="contact.html">Contact</a>
+            <a href="blog/what-is-a-payment-gateway.html">Blogs</a>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            type="button"
+            aria-label="Toggle dark mode"
+          >
+            ◐
+          </button>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="page-hero container reveal">
-            <p class="eyebrow">CONTACT</p>
-            <h1>Let's talk about your payment workflow.</h1>
-            <p>Demo form with client-side validation. No data is sent to a server.</p>
-        </section>
-        <section class="section container contact-layout">
-            <form id="contact-form" class="card form-card" novalidate>
-                <label for="name">Full name<input id="name" name="name" autocomplete="name" required><span class="error"
-                        id="name-error"></span></label>
-                <label for="email">Email address<input id="email" name="email" type="email" autocomplete="email"
-                        required><span class="error" id="email-error"></span></label>
-                <label for="company">Company<input id="company" name="company" autocomplete="organization"></label>
-                <label for="message">Message<textarea id="message" name="message" rows="6" required></textarea><span
-                        class="error" id="message-error"></span></label>
-                <button class="btn btn-primary" type="submit">Send demo message</button>
-                <p id="form-status" role="status" aria-live="polite"></p>
-            </form>
-            <aside class="contact-info reveal">
-                <p class="eyebrow">GET IN TOUCH</p>
-                <h2>A better payment experience starts with a conversation.</h2>
-                <p>Use this page to demonstrate accessible forms, labels, validation, focus states, and success
-                    feedback.</p>
-                <div class="card"><strong>Email</strong>
-                    <p>hello@example.com</p><strong>Hours</strong>
-                    <p>Mon–Fri · 9:00–17:00</p>
-                </div>
-            </aside>
-        </section>
+      <section class="page-hero container reveal">
+        <p class="eyebrow">CONTACT</p>
+        <h1>Let's talk about your payment workflow.</h1>
+        <p>
+          Demo form with client-side validation. No data is sent to a server.
+        </p>
+      </section>
+      <section class="section container contact-layout">
+        <form id="contact-form" class="card form-card" novalidate>
+          <label for="name"
+            >Full name<input
+              id="name"
+              name="name"
+              autocomplete="name"
+              required /><span class="error" id="name-error"></span
+          ></label>
+          <label for="email"
+            >Email address<input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required /><span class="error" id="email-error"></span
+          ></label>
+          <label for="company"
+            >Company<input
+              id="company"
+              name="company"
+              autocomplete="organization"
+          /></label>
+          <label for="message"
+            >Message<textarea
+              id="message"
+              name="message"
+              rows="6"
+              required
+            ></textarea
+            ><span class="error" id="message-error"></span
+          ></label>
+          <button class="btn btn-primary" type="submit">
+            Send demo message
+          </button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+        <aside class="contact-info reveal">
+          <p class="eyebrow">GET IN TOUCH</p>
+          <h2>A better payment experience starts with a conversation.</h2>
+          <p>
+            Use this page to demonstrate accessible forms, labels, validation,
+            focus states, and success feedback.
+          </p>
+          <div class="card">
+            <strong>Email</strong>
+            <p>hello@example.com</p>
+            <strong>Hours</strong>
+            <p>Mon–Fri · 9:00–17:00</p>
+          </div>
+        </aside>
+      </section>
     </main>
-    <footer class="footer">
-        <div class="container footer-inner"><a class="logo" href="index.html">Clear<span>Pay</span></a>
-            <p>© 2026 ClearPay </p>
-        </div>
-    </footer>
-</body>
-
+<footer class="footer">
+    <div class="container footer-inner">
+        <a class="logo" href="../index.html">ClearPay<span>.</span></a>
+        <p class="footer-copyright">
+            © 2026 ClearPay. Fictional fintech project. Built by
+        <a href="https://junaid-dev-portfolio-alpha.vercel.app/" target="_blank" rel="noopener noreferrer">Muhammad Junaid</a>.
+        </p>
+    </div>
+</footer>
+  </body>
 </html>

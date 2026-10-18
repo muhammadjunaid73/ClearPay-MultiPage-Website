@@ -1,89 +1,149 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Discover ClearPay's fintech demo features, including payment workflow concepts, business tools, and solutions designed to simplify payment management."
+    />
+    <title>Payment Workflow Features | ClearPay Demo</title>
+    <link
+      rel="canonical"
+      href="https://clear-pay-multi-page-website.vercel.app/features.html"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/token.css" />
+    <script defer src="js/main.js"></script>
+    <script defer src="js/features.js"></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore ClearPay fintech features.">
-  <title>Features | ClearPay</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/token.css">
-  <script defer src="js/main.js"></script>
-  <script defer src="js/features.js"></script>
-</head>
-
-<body>
-  <header class="site-header">
-    <nav class="nav container" aria-label="Main navigation"><a class="logo"
-        href="index.html">Clear<span>Pay</span></a><button class="nav-toggle" aria-expanded="false"
-        aria-controls="nav-menu">Menu</button>
-      <div id="nav-menu" class="nav-menu"><a href="index.html">Home</a><a class="active"
-          href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="about.html">About</a><a
-          href="contact.html">Contact</a><button id="theme-toggle" class="theme-toggle" type="button"
-          aria-label="Toggle dark mode">◐</button></div>
-    </nav>
-  </header>
-  <main>
-    <section class="page-hero container reveal">
-      <p class="eyebrow">FEATURES</p>
-      <h1>Tools designed around your money.</h1>
-      <p>Explore the ClearPay feature set and filter it by what matters most to your business.</p>
-    </section>
-    <section class="section container">
-      <div class="filters" role="group" aria-label="Filter features">
-        <button class="filter active" data-filter="all">All</button><button class="filter"
-          data-filter="payments">Payments</button><button class="filter" data-filter="security">Security</button><button
-          class="filter" data-filter="analytics">Analytics</button><button class="filter"
-          data-filter="automation">Automation</button>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="logo" href="index.html">Clear<span>Pay</span></a
+        ><button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          Menu
+        </button>
+        <div id="nav-menu" class="nav-menu">
+          <a href="index.html">Home</a>
+          <a class="active" href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a><a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="blog/what-is-a-payment-gateway.html">Blogs</a>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            type="button"
+            aria-label="Toggle dark mode"
+          >
+            ◐
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero container reveal">
+        <p class="eyebrow">FEATURES</p>
+        <h1>Tools designed around your money.</h1>
+        <p>
+          Explore the ClearPay feature set and filter it by what matters most to
+          your business.
+        </p>
+      </section>
+      <section class="section container">
+        <div class="filters" role="group" aria-label="Filter features">
+          <button class="filter active" data-filter="all">All</button
+          ><button class="filter" data-filter="payments">Payments</button
+          ><button class="filter" data-filter="security">Security</button
+          ><button class="filter" data-filter="analytics">Analytics</button
+          ><button class="filter" data-filter="automation">Automation</button>
+        </div>
+        <div class="grid-3 feature-list">
+          <article class="card feature-card reveal" data-category="payments">
+            <span class="icon">↯</span>
+            <h2>Checkout links</h2>
+            <p>
+              Create shareable payment experiences without building a full
+              checkout from scratch.
+            </p>
+            <span class="tag">Payments</span>
+          </article>
+          <article class="card feature-card reveal" data-category="payments">
+            <span class="icon">▣</span>
+            <h2>Recurring billing</h2>
+            <p>
+              Model subscriptions and predictable billing workflows for your
+              customers.
+            </p>
+            <span class="tag">Payments</span>
+          </article>
+          <article class="card feature-card reveal" data-category="security">
+            <span class="icon">◆</span>
+            <h2>Risk controls</h2>
+            <p>
+              Design configurable rules for monitoring unusual transaction
+              activity.
+            </p>
+            <span class="tag">Security</span>
+          </article>
+          <article class="card feature-card reveal" data-category="security">
+            <span class="icon">✓</span>
+            <h2>Team permissions</h2>
+            <p>
+              Separate access levels so every team member sees only what they
+              need.
+            </p>
+            <span class="tag">Security</span>
+          </article>
+          <article class="card feature-card reveal" data-category="analytics">
+            <span class="icon">⌁</span>
+            <h2>Revenue insights</h2>
+            <p>
+              Review transaction patterns and build a clearer picture of
+              business performance.
+            </p>
+            <span class="tag">Analytics</span>
+          </article>
+          <article class="card feature-card reveal" data-category="analytics">
+            <span class="icon">◒</span>
+            <h2>Custom reports</h2>
+            <p>
+              Organize financial data into reports your team can actually use.
+            </p>
+            <span class="tag">Analytics</span>
+          </article>
+          <article class="card feature-card reveal" data-category="automation">
+            <span class="icon">⟳</span>
+            <h2>Smart workflows</h2>
+            <p>
+              Reduce repetitive finance operations with rules-based workflow
+              concepts.
+            </p>
+            <span class="tag">Automation</span>
+          </article>
+          <article class="card feature-card reveal" data-category="automation">
+            <span class="icon">⚡</span>
+            <h2>Alerts</h2>
+            <p>Surface important payment events so teams can react faster.</p>
+            <span class="tag">Automation</span>
+          </article>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <a class="logo" href="../index.html">ClearPay<span>.</span></a>
+        <p class="footer-copyright">
+          © 2026 ClearPay. Fictional fintech project. Built by
+        <a href="https://junaid-dev-portfolio-alpha.vercel.app/" target="_blank" rel="noopener noreferrer">Muhammad Junaid</a>.
+        </p>
       </div>
-      <div class="grid-3 feature-list">
-        <article class="card feature-card reveal" data-category="payments"><span class="icon">↯</span>
-          <h2>Checkout links</h2>
-          <p>Create shareable payment experiences without building a full checkout from scratch.</p><span
-            class="tag">Payments</span>
-        </article>
-        <article class="card feature-card reveal" data-category="payments"><span class="icon">▣</span>
-          <h2>Recurring billing</h2>
-          <p>Model subscriptions and predictable billing workflows for your customers.</p><span
-            class="tag">Payments</span>
-        </article>
-        <article class="card feature-card reveal" data-category="security"><span class="icon">◆</span>
-          <h2>Risk controls</h2>
-          <p>Design configurable rules for monitoring unusual transaction activity.</p><span class="tag">Security</span>
-        </article>
-        <article class="card feature-card reveal" data-category="security"><span class="icon">✓</span>
-          <h2>Team permissions</h2>
-          <p>Separate access levels so every team member sees only what they need.</p><span class="tag">Security</span>
-        </article>
-        <article class="card feature-card reveal" data-category="analytics"><span class="icon">⌁</span>
-          <h2>Revenue insights</h2>
-          <p>Review transaction patterns and build a clearer picture of business performance.</p><span
-            class="tag">Analytics</span>
-        </article>
-        <article class="card feature-card reveal" data-category="analytics"><span class="icon">◒</span>
-          <h2>Custom reports</h2>
-          <p>Organize financial data into reports your team can actually use.</p><span class="tag">Analytics</span>
-        </article>
-        <article class="card feature-card reveal" data-category="automation"><span class="icon">⟳</span>
-          <h2>Smart workflows</h2>
-          <p>Reduce repetitive finance operations with rules-based workflow concepts.</p><span
-            class="tag">Automation</span>
-        </article>
-        <article class="card feature-card reveal" data-category="automation"><span class="icon">⚡</span>
-          <h2>Alerts</h2>
-          <p>Surface important payment events so teams can react faster.</p><span class="tag">Automation</span>
-        </article>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div><a class="logo" href="index.html">Clear<span>Pay</span></a>
-        <p>Fictional fintech  project.</p>
-      </div>
-      <p>© 2026 ClearPay </p>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

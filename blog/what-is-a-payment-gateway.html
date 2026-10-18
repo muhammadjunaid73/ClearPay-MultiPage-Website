@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>What Is a Payment Gateway? A Beginner's Guide | ClearPay</title>
+
+    <meta name="description"
+        content="Ever wondered how online payments work? Learn what a payment gateway is, how transactions work, and how gateways differ from payment processors.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://clear-pay-multi-page-website.vercel.app/blog/what-is-a-payment-gateway.html">
+
+    <link rel="stylesheet" href="../css/token.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/payment-gateway.css">
+
+</head>
+
+<body>
+
+    <!-- Header (same markup as the rest of the site) -->
+    <header class="site-header">
+        <div class="container nav">
+            <a class="logo" href="../index.html">ClearPay<span>.</span></a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+            <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+                <a href="../index.html">Home</a>
+                <a href="../features.html">Features</a>
+                <a href="../pricing.html">Pricing</a>
+                <a href="../about.html">About</a>
+                <a href="../contact.html">Contact</a>
+            <a class="active" href="what-is-a-payment-gateway.html" aria-current="page">Blog</a>
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">◐</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="blog-container">
+
+        <!-- Article Hero -->
+        <section class="article-hero">
+
+            <p class="article-category">PAYMENTS EXPLAINED</p>
+
+            <h1>What Is a Payment Gateway? A Beginner's Guide to Online Payments</h1>
+
+            <p class="article-intro">
+                Ever bought something online and wondered how your payment
+                travels from your bank to the seller? Let's break down the
+                technology behind online payments in simple terms.
+            </p>
+
+            <div class="article-meta">
+                <span>By Muhammad Junaid</span>
+                <span aria-hidden="true">•</span>
+                <span>Beginner's Guide</span>
+            </div>
+
+            <!-- IMAGE 1: Hero (eager, not lazy, because it is above the fold) -->
+            <figure class="article-image">
+                <img src="../images/blog/secure-online-payment-gateway-illustration.jpg"
+                    alt="Digital payment gateway illustration showing secure online transaction" width="1408"
+                    height="768" loading="eager" fetchpriority="high">
+                <figcaption>
+                    A simplified illustration of an online payment experience.
+                </figcaption>
+            </figure>
+
+        </section>
+
+        <!-- Fictional project disclosure -->
+        <aside class="article-disclaimer" aria-label="Project disclosure">
+            <strong>About this project</strong>
+            <p>
+                ClearPay is a fictional fintech demonstration project.
+                This article is educational and does not describe a live
+                payment service or provide financial or security guarantees.
+            </p>
+        </aside>
+
+        <!-- Table of contents -->
+        <nav class="article-toc" aria-label="Table of contents">
+            <h2>In This Guide</h2>
+            <ol>
+                <li>
+                    <a href="#what-is-a-payment-gateway">
+                        What Is a Payment Gateway?
+                    </a>
+                </li>
+                <li>
+                    <a href="#how-it-works">
+                        How Does an Online Payment Work?
+                    </a>
+                </li>
+                <li>
+                    <a href="#gateway-vs-processor">
+                        Gateway vs. Payment Processor
+                    </a>
+                </li>
+                <li>
+                    <a href="#choosing-a-gateway">
+                        What Should Businesses Consider?
+                    </a>
+                </li>
+                <li>
+                    <a href="#faqs">Frequently Asked Questions</a>
+                </li>
+            </ol>
+        </nav>
+
+        <article class="article-content">
+
+            <section id="what-is-a-payment-gateway">
+                <h2>What Is a Payment Gateway? Explained Simply</h2>
+
+                <p>
+                    Imagine visiting a physical store and paying with your
+                    debit or credit card. The payment terminal securely sends
+                    the transaction information through the payment system so
+                    the relevant financial institutions can authorize it.
+                </p>
+
+                <p>
+                    A <strong>payment gateway</strong> performs a similar role
+                    for online purchases. It helps securely collect and transmit
+                    payment information between a customer's checkout and the
+                    payment services that handle authorization.
+                </p>
+
+                <!-- IMAGE 2: POS vs online gateway -->
+                <figure class="article-image">
+                    <img src="../images/blog/physical-pos-terminal-vs-online-payment-gateway.png"
+                        alt="Comparison of a physical POS terminal and an online payment gateway" width="1536"
+                        height="1024" loading="lazy">
+                    <figcaption>
+                        In a store, a card terminal collects the payment. Online,
+                        the checkout and gateway do the same job.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    Depending on how a website integrates its payment service,
+                    customers may enter their details on a hosted payment page
+                    or through an embedded checkout. The gateway's role and the
+                    exact data flow can vary by provider and integration.
+                </p>
+
+                <p>
+                    In simple terms, a payment gateway helps an online business
+                    accept payments without having to build the entire payment
+                    infrastructure itself.
+                </p>
+            </section>
+
+            <section id="how-it-works">
+                <h2>What Happens When a Customer Makes a Payment?</h2>
+
+                <p>
+                    When a customer clicks "Pay Now," several systems may
+                    communicate behind the scenes. A typical card payment
+                    follows a process like this:
+                </p>
+
+                <!-- IMAGE 3: Payment flowchart -->
+                <figure class="article-image">
+                    <img src="../images/blog/how-payment-gateway-works-step-by-step-flowchart.png"
+                        alt="Step-by-step flowchart of how an online payment gateway processes a transaction"
+                        width="1400" height="500" loading="lazy">
+                    <figcaption>
+                        A simplified view of a card payment, from customer to approval.
+                    </figcaption>
+                </figure>
+
+                <ol class="process-list">
+                    <li>
+                        <strong>Payment details are submitted.</strong>
+                        The customer enters their card details on a checkout
+                        page or uses a supported payment method.
+                    </li>
+
+                    <li>
+                        <strong>Information is transmitted securely.</strong>
+                        The checkout and payment services use appropriate
+                        security measures, commonly including HTTPS and TLS,
+                        to protect information in transit.
+                    </li>
+
+                    <li>
+                        <strong>The payment request is routed.</strong>
+                        The gateway or integrated payment platform passes
+                        the transaction request to the relevant processor
+                        or acquiring payment service.
+                    </li>
+
+                    <li>
+                        <strong>The transaction is authorized.</strong>
+                        The request is routed through the payment network
+                        to the customer's card issuer or relevant financial
+                        institution for a decision.
+                    </li>
+
+                    <li>
+                        <strong>A response is returned.</strong>
+                        The authorization result travels back through the
+                        payment system, and the website displays an appropriate
+                        status to the customer.
+                    </li>
+
+                    <li>
+                        <strong>Settlement follows.</strong>
+                        If approved, the transaction may proceed through
+                        clearing and settlement. The time it takes for funds
+                        to reach a business account depends on the provider,
+                        payment method, and other conditions.
+                    </li>
+                </ol>
+
+                <p>
+                    One important detail: authorization does not always mean
+                    the money has already reached the merchant's bank account.
+                    Settlement is a separate part of the payment process.
+                </p>
+            </section>
+
+            <section id="gateway-vs-processor">
+                <h2>Payment Gateway vs. Payment Processor: What's the Difference?</h2>
+
+                <p>
+                    These terms are closely related, and some payment providers
+                    offer both services together. However, they describe
+                    different functions in a payment setup.
+                </p>
+
+                <!-- IMAGE 4: Gateway vs processor -->
+                <figure class="article-image">
+                    <img src="../images/blog/payment-gateway-vs-payment-processor-difference.jpg"
+                        alt="Visual difference between a payment gateway and a payment processor" width="1408"
+                        height="768" loading="lazy">
+                    <figcaption>
+                        A gateway handles the checkout side, while a processor
+                        handles transaction communication behind the scenes.
+                    </figcaption>
+                </figure>
+
+                <div class="comparison-table-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Payment Gateway</th>
+                                <th scope="col">Payment Processor</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Helps collect and securely transmit payment
+                                    information from checkout.
+                                </td>
+                                <td>
+                                    Handles transaction communication and processing
+                                    between relevant payment participants.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    Connects the checkout experience with payment
+                                    services.
+                                </td>
+                                <td>
+                                    Helps route transaction information through
+                                    the payment infrastructure.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    Often works behind an online checkout.
+                                </td>
+                                <td>
+                                    Often operates behind the scenes as part of
+                                    transaction processing.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>
+                    <strong>The key takeaway:</strong> A gateway helps connect
+                    checkout to payment processing, while processing services
+                    handle transaction communication. In practice, one provider
+                    may combine these functions, so the distinction depends
+                    on the payment setup.
+                </p>
+            </section>
+
+            <section id="choosing-a-gateway">
+                <h2>What Should a Business Consider Before Choosing a Gateway?</h2>
+
+                <p>
+                    Choosing a payment solution involves more than comparing
+                    prices. Here are some useful factors to evaluate before
+                    making a decision.
+                </p>
+
+                <!-- IMAGE 5: Business dashboard -->
+                <figure class="article-image">
+                    <img src="../images/blog/choosing-payment-gateway-for-business-dashboard.jpg"
+                        alt="Business owner reviewing payment gateway fees and analytics dashboard" width="1408"
+                        height="768" loading="lazy">
+                    <figcaption>
+                        Comparing fees and transaction data helps businesses choose a gateway.
+                    </figcaption>
+                </figure>
+
+                <h3>1. Transaction Fees</h3>
+                <p>
+                    Providers may charge a percentage, a fixed fee per
+                    transaction, monthly fees, or other charges. Review the
+                    full pricing structure and calculate how it could affect
+                    your business margins.
+                </p>
+
+                <h3>2. Supported Payment Methods</h3>
+                <p>
+                    Consider whether your customers need card payments,
+                    digital wallets, bank transfers, or locally popular
+                    payment methods. Availability depends on the provider
+                    and the countries it supports.
+                </p>
+
+                <h3>3. Security and Compliance</h3>
+                <p>
+                    Review the provider's security documentation, data
+                    protection practices, and relevant PCI DSS responsibilities.
+                    Compliance requirements depend on the payment setup;
+                    using a provider does not automatically remove every
+                    security obligation from a business.
+                </p>
+
+                <h3>4. Integration and Developer Support</h3>
+                <p>
+                    Check whether the provider offers clear documentation,
+                    suitable APIs, test credentials, and a sandbox environment.
+                    A well-documented integration can make development
+                    and testing easier.
+                </p>
+
+                <h3>5. Settlement and Support</h3>
+                <p>
+                    Find out when funds are normally settled, how refunds
+                    and disputes are handled, and what customer support
+                    is available. Settlement times vary, so check the
+                    provider's published terms instead of assuming a
+                    universal timeframe.
+                </p>
+            </section>
+
+            <section id="faqs" class="article-faq">
+                <h2>Frequently Asked Questions</h2>
+
+                <details>
+                    <summary>Is it safe to enter card details online?</summary>
+                    <p>
+                        Online payments can be secure when the merchant and its
+                        payment providers use appropriate safeguards. Look for
+                        a legitimate website and secure connection, but remember
+                        that HTTPS alone does not prove a business is trustworthy
+                        or guarantee that every part of a payment system is safe.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Is UPI a payment gateway?</summary>
+                    <p>
+                        No. UPI is a payment system used to transfer money.
+                        A gateway is a technology layer that can help a website
+                        or application initiate and manage a payment through
+                        supported payment services.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Does a payment gateway hold my money?</summary>
+                    <p>
+                        A gateway generally facilitates payment information
+                        exchange rather than acting as the customer's bank.
+                        The handling and settlement of funds depend on the
+                        payment provider, acquiring arrangement, and applicable
+                        terms.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Does an approved payment mean the money has settled?</summary>
+                    <p>
+                        Not necessarily. Authorization indicates that a payment
+                        has received an approval response. Clearing and settlement
+                        happen separately, and the timing depends on the payment
+                        method and provider.
+                    </p>
+                </details>
+            </section>
+
+            <!-- Related ClearPay page -->
+            <section class="article-cta">
+                <h2>Explore the ClearPay Demo</h2>
+
+                <p>
+                    ClearPay is a fictional fintech demonstration project
+                    exploring payment workflow concepts and business-focused
+                    interface design.
+                </p>
+
+                <a class="article-cta-link" href="../features.html">
+                    Explore Demo Features
+                </a>
+            </section>
+
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a class="logo" href="../index.html">ClearPay<span>.</span></a>
+            <p class="footer-copyright">
+                © 2026 ClearPay. Fictional fintech project. Built by
+            <a href="https://junaid-dev-portfolio-alpha.vercel.app/" target="_blank" rel="noopener noreferrer">Muhammad Junaid</a>.
+            </p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+
+</body>
+
+</html>

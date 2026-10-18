@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clear-pay-multi-page-website.vercel.app/sitemap.xml

@@ -598,3 +598,44 @@ a {
     transition: none;
   }
 }
+
+
+/* Fictional fintech project disclosure */
+.demo-disclaimer {
+  width: min(100% - 2rem, 1100px);
+  margin: 1.5rem auto;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--primary);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.demo-disclaimer__content strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+.demo-disclaimer__content p {
+  margin: 0;
+  line-height: 1.7;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+.demo-data-note {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.footer-copyright a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-copyright a:hover {
+  text-decoration: underline;
+}
+
