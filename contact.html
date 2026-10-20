@@ -35,7 +35,7 @@
           <a href="pricing.html">Pricing</a>
           <a href="about.html">About</a>
           <a class="active" href="contact.html">Contact</a>
-            <a href="blog/what-is-a-payment-gateway.html">Blogs</a>
+            <a href="blog/what-is-a-payment-gateway.html">Blog</a>
           <button
             id="theme-toggle"
             class="theme-toggle"
@@ -52,65 +52,58 @@
         <p class="eyebrow">CONTACT</p>
         <h1>Let's talk about your payment workflow.</h1>
         <p>
-          Demo form with client-side validation. No data is sent to a server.
+          A portfolio demo of a clear, accessible contact experience. This form demonstrates client-side validation; it does not send or store messages.
         </p>
       </section>
       <section class="section container contact-layout">
         <form id="contact-form" class="card form-card" novalidate>
-          <label for="name"
-            >Full name<input
-              id="name"
-              name="name"
-              autocomplete="name"
-              required /><span class="error" id="name-error"></span
-          ></label>
-          <label for="email"
-            >Email address<input
-              id="email"
-              name="email"
-              type="email"
-              autocomplete="email"
-              required /><span class="error" id="email-error"></span
-          ></label>
-          <label for="company"
-            >Company<input
-              id="company"
-              name="company"
-              autocomplete="organization"
-          /></label>
-          <label for="message"
-            >Message<textarea
-              id="message"
-              name="message"
-              rows="6"
-              required
-            ></textarea
-            ><span class="error" id="message-error"></span
-          ></label>
-          <button class="btn btn-primary" type="submit">
-            Send demo message
-          </button>
-          <p id="form-status" role="status" aria-live="polite"></p>
+          <label for="name">Full name
+            <input id="name" name="name" autocomplete="name" aria-describedby="name-error" required />
+            <span class="error" id="name-error"></span>
+          </label>
+          <label for="email">Email address
+            <input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-error" required />
+            <span class="error" id="email-error"></span>
+          </label>
+          <label for="inquiry-type">What would you like to discuss?
+            <select id="inquiry-type" name="inquiry-type" aria-describedby="inquiry-type-error" required>
+              <option value="">Choose a topic</option>
+              <option value="pricing">Pricing</option>
+              <option value="product-demo">Product demo</option>
+              <option value="integration">Payment integration</option>
+              <option value="other">Something else</option>
+            </select>
+            <span class="error" id="inquiry-type-error"></span>
+          </label>
+          <label for="company">Company (optional)
+            <input id="company" name="company" autocomplete="organization" />
+          </label>
+          <label for="message">Message
+            <textarea id="message" name="message" rows="6" minlength="10" maxlength="500" aria-describedby="message-error message-counter" required></textarea>
+            <span class="error" id="message-error"></span>
+            <span class="character-counter" id="message-counter">0 / 500 characters</span>
+          </label>
+          <button class="btn btn-primary" type="submit">Validate demo message</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite" aria-atomic="true"></p>
         </form>
         <aside class="contact-info reveal">
-          <p class="eyebrow">GET IN TOUCH</p>
-          <h2>A better payment experience starts with a conversation.</h2>
-          <p>
-            Use this page to demonstrate accessible forms, labels, validation,
-            focus states, and success feedback.
-          </p>
+          <p class="eyebrow">PROJECT INFO</p>
+          <h2>A contact experience designed for clarity.</h2>
+          <p>This fictional fintech site is a portfolio project demonstrating accessible form controls, validation, and responsive feedback.</p>
           <div class="card">
-            <strong>Email</strong>
-            <p>hello@example.com</p>
-            <strong>Hours</strong>
-            <p>Mon–Fri · 9:00–17:00</p>
+            <p class="project-label">FICTIONAL PORTFOLIO PROJECT</p>
+            <strong>ClearPay</strong>
+            <p>Payments dashboard concept built with HTML, CSS, and vanilla JavaScript.</p>
+            <strong>About this form</strong>
+            <p>Your entries stay in this browser session. Submitting only demonstrates validation; nothing is sent or saved.</p>
+            <a class="text-link" href="https://junaid-dev-portfolio-alpha.vercel.app/" target="_blank" rel="noopener noreferrer">Visit the developer portfolio</a>
           </div>
         </aside>
       </section>
     </main>
 <footer class="footer">
     <div class="container footer-inner">
-        <a class="logo" href="../index.html">ClearPay<span>.</span></a>
+        <a class="logo" href="index.html">ClearPay<span>.</span></a>
         <p class="footer-copyright">
             © 2026 ClearPay. Fictional fintech project. Built by
         <a href="https://junaid-dev-portfolio-alpha.vercel.app/" target="_blank" rel="noopener noreferrer">Muhammad Junaid</a>.

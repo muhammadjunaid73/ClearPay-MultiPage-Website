@@ -379,6 +379,7 @@ a {
 }
 .calc-form select,
 .calc-form input:not([type="checkbox"]),
+.form-card select,
 .form-card input,
 .form-card textarea {
   width: 100%;
@@ -392,13 +393,49 @@ a {
   font-weight: 800;
   color: var(--primary);
 }
+.calc-form input[type="range"],
+.calc-form input[type="checkbox"] {
+  accent-color: var(--primary);
+}
+.calc-form input[type="range"] {
+  padding: 0;
+  cursor: pointer;
+}
 .check {
   display: flex !important;
   grid-template-columns: auto 1fr;
   align-items: center;
+  gap: 0.75rem;
+  min-height: 44px;
+  cursor: pointer;
 }
 .check input {
   width: auto;
+  min-width: 18px;
+  min-height: 18px;
+  margin: 0;
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+.price-breakdown {
+  margin: 1rem 0 1.5rem;
+  padding: 1rem 0;
+  border-block: 1px solid var(--border);
+}
+.price-breakdown > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.35rem 0;
+}
+.price-breakdown dt {
+  color: var(--muted);
+}
+.price-breakdown dd {
+  margin: 0;
+  font-weight: 750;
+  text-align: right;
 }
 .price-result {
   padding: 2rem;
@@ -459,6 +496,35 @@ a {
   color: #c0364b;
   font-size: 0.82rem;
 }
+.form-card [aria-invalid="true"] {
+  border-color: #c0364b;
+}
+.character-counter {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-align: right;
+}
+.form-status {
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  font-weight: 700;
+}
+.form-status:not(:empty) {
+  padding: 0.85rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+.form-status.is-error {
+  color: #a3293e;
+  border-color: #e8aab4;
+  background: #fff3f4;
+}
+.form-status.is-success {
+  color: var(--success);
+  border-color: var(--success);
+}
 .contact-info {
   padding-top: 1rem;
 }
@@ -475,6 +541,12 @@ a {
 }
 .contact-info .card p {
   color: var(--muted);
+}
+.contact-info .project-label {
+  color: var(--primary);
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
 }
 .footer {
   padding: 2rem 0;
@@ -578,6 +650,9 @@ a {
   .form-card,
   .hero-card {
     padding: 1.25rem;
+  }
+  .price-breakdown > div {
+    gap: 0.5rem;
   }
   .stats {
     grid-template-columns: 1fr;

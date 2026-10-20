@@ -1,49 +1,73 @@
 /* ==========================
    ClearPay: contact.js
-   Contact form validation (demo, nothing is sent)
+   Portfolio demo form validation (nothing is sent)
 ========================== */
 
 const form = document.querySelector('#contact-form');
 const status = document.querySelector('#form-status');
+const messageField = document.querySelector('#message');
+const messageCounter = document.querySelector('#message-counter');
+const fields = {
+  name: document.querySelector('#name'),
+  email: document.querySelector('#email'),
+  inquiryType: document.querySelector('#inquiry-type'),
+  message: messageField,
+};
 
-function showError(id, message) {
-    const el = document.querySelector(`#${id}-error`);
-    if (el) el.textContent = message;
+function showError(field, message) {
+  const error = document.querySelector(`#${field.id}-error`);
+  if (error) error.textContent = message;
+  field.setAttribute('aria-invalid', String(Boolean(message)));
 }
 
-form?.addEventListener('submit', (e) => {
-    e.preventDefault();
+function updateCounter() {
+  messageCounter.textContent = `${messageField.value.length} / ${messageField.maxLength} characters`;
+}
 
-    // Clear previous messages
-    showError('name', '');
-    showError('email', '');
-    showError('message', '');
+messageField.addEventListener('input', updateCounter);
+
+Object.values(fields).forEach((field) => {
+  const eventName = field.tagName === 'SELECT' ? 'change' : 'input';
+  field.addEventListener(eventName, () => {
+    showError(field, '');
     status.textContent = '';
-
-    let valid = true;
-
-    const name = document.querySelector('#name').value.trim();
-    const email = document.querySelector('#email').value.trim();
-    const message = document.querySelector('#message').value.trim();
-
-    if (name.length < 2) {
-        showError('name', 'Please enter your full name.');
-        valid = false;
-    }
-
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        showError('email', 'Please enter a valid email address.');
-        valid = false;
-    }
-
-    if (message.length < 10) {
-        showError('message', 'Message must contain at least 10 characters.');
-        valid = false;
-    }
-
-    if (valid) {
-        status.textContent = 'Demo message validated successfully. No data was sent to a server.';
-        status.style.color = 'var(--success)';
-        form.reset();
-    }
+    status.classList.remove('is-error', 'is-success');
+  });
 });
+
+form?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  status.textContent = '';
+  status.classList.remove('is-error', 'is-success');
+
+  const values = {
+    name: fields.name.value.trim(),
+    email: fields.email.value.trim(),
+    inquiryType: fields.inquiryType.value,
+    message: fields.message.value.trim(),
+  };
+  const errors = {
+    name: values.name.length < 2 ? 'Please enter at least 2 characters for your name.' : '',
+    email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email) ? '' : 'Please enter a valid email address.',
+    inquiryType: values.inquiryType ? '' : 'Please choose a topic.',
+    message: values.message.length < 10 ? 'Please enter at least 10 characters.' : '',
+  };
+
+  Object.entries(fields).forEach(([key, field]) => showError(field, errors[key]));
+  const firstInvalid = Object.values(fields).find((field) => field.getAttribute('aria-invalid') === 'true');
+
+  if (firstInvalid) {
+    status.textContent = 'Please check the highlighted fields and try again.';
+    status.classList.add('is-error');
+    firstInvalid.focus();
+    return;
+  }
+
+  status.textContent = 'Demo validated successfully. No message was sent or saved.';
+  status.classList.add('is-success');
+  form.reset();
+  Object.values(fields).forEach((field) => showError(field, ''));
+  updateCounter();
+});
+
+updateCounter();

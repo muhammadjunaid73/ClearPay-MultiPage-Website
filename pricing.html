@@ -56,40 +56,32 @@
       <section class="section container">
         <div class="calculator card reveal">
           <div class="calc-form">
-            <label for="plan"
-              >Plan<select id="plan">
-                <option value="29">Starter — $29/mo</option>
-                <option value="79">Growth — $79/mo</option>
-                <option value="149">Scale — $149/mo</option>
-              </select></label
-            >
-            <label for="users"
-              >Team members <output id="users-output">5</output
-              ><input id="users" type="range" min="1" max="50" value="5"
-            /></label>
-            <label for="volume"
-              >Monthly payment volume <output id="volume-output">$10,000</output
-              ><input
-                id="volume"
-                type="range"
-                min="1000"
-                max="100000"
-                step="1000"
-                value="10000"
-            /></label>
-            <label class="check"
-              ><input id="analytics" type="checkbox" /> Advanced analytics
-              (+$25)</label
-            >
-            <label class="check"
-              ><input id="automation" type="checkbox" /> Automation pack
-              (+$35)</label
-            >
+            <label for="plan">Plan
+              <select id="plan">
+                <option value="starter">Starter — $29/mo</option>
+                <option value="growth">Growth — $79/mo</option>
+                <option value="scale">Scale — $149/mo</option>
+              </select>
+            </label>
+            <label for="users">Team members <output id="users-output" for="users">5 members</output>
+              <input id="users" type="range" min="1" max="50" value="5" />
+            </label>
+            <label for="volume">Monthly payment volume <output id="volume-output" for="volume">$10,000 / month</output>
+              <input id="volume" type="range" min="1000" max="100000" step="1000" value="10000" />
+            </label>
+            <label class="check"><input id="analytics" type="checkbox" /> Advanced analytics (+$25/mo)</label>
+            <label class="check"><input id="automation" type="checkbox" /> Automation pack (+$35/mo)</label>
           </div>
           <div class="price-result">
             <p class="eyebrow">ESTIMATED MONTHLY</p>
-            <div id="price" class="price">$29</div>
-            <p id="price-detail">Base plan + usage estimate</p>
+            <div id="price" class="price" aria-live="polite" aria-atomic="true">$79.00</div>
+            <p id="price-detail">Estimated ClearPay platform cost per month</p>
+            <dl class="price-breakdown" aria-label="Monthly price breakdown">
+              <div><dt>Plan</dt><dd id="breakdown-plan">$29.00</dd></div>
+              <div><dt>Extra team members</dt><dd id="breakdown-users">$10.00</dd></div>
+              <div><dt>Payment volume fee</dt><dd id="breakdown-volume">$40.00 (0.40%)</dd></div>
+              <div><dt>Add-ons</dt><dd id="breakdown-addons">$0.00</dd></div>
+            </dl>
             <a class="btn btn-primary" href="contact.html">Talk to sales</a>
           </div>
         </div>
